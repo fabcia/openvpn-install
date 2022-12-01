@@ -337,6 +337,10 @@ So both provide an additional layer of security and mitigate DoS attacks. They a
 
 The script supports both and uses `tls-crypt` by default.
 
+about ip-table config 
+# Sysadmin rule
+iptables -A FORWARD -i tun0 -s 10.8.0.0/24 -d 192.168.0.0/24 -j ACCEPT
+
 ## Say thanks
 
 You can [say thanks](https://saythanks.io/to/angristan) if you want!
